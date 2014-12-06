@@ -1,39 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Berfin Kaya</title>
-    <link href="css/jquery.galereya.css" rel="stylesheet"/>
-	<link href="css/style.min.css" rel="stylesheet" />
-	<link href="css/mb-comingsoon.min.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ramazan Carus Mimarlık</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="css/jquery.galereya.ie.css">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<script src="js/jquery.1.9.1.min.js"></script>
-    <script src="js/jquery.galereya.min.js"></script>
-	<script src="js/jquery.mb-comingsoon.min.js"></script> 
-    <script>
-	var datajson = JSON.parse('[{"lowsrc":"upload\/6200_1193507365505_5131364_n.jpg","fullsrc":"upload\/6200_1193507365505_5131364_n.jpg", "description":".."},{"lowsrc":"upload\/17348_307283060667_6863873_n.jpg","fullsrc":"upload\/17348_307283060667_6863873_n.jpg", "description":".."},{"lowsrc":"upload\/26052_384699515667_5758912_n.jpg","fullsrc":"upload\/26052_384699515667_5758912_n.jpg", "description":".."},{"lowsrc":"upload\/61184_428986335667_2824833_n.jpg","fullsrc":"upload\/61184_428986335667_2824833_n.jpg", "description":".."},{"lowsrc":"upload\/64405_10151825005465668_1462002274_n.jpg","fullsrc":"upload\/64405_10151825005465668_1462002274_n.jpg", "description":".."},{"lowsrc":"upload\/66068_434962340667_6755445_n.jpg","fullsrc":"upload\/66068_434962340667_6755445_n.jpg", "description":".."},{"lowsrc":"upload\/67331_434959725667_795063_n.jpg","fullsrc":"upload\/67331_434959725667_795063_n.jpg", "description":".."},{"lowsrc":"upload\/68054_434960495667_6492149_n.jpg","fullsrc":"upload\/68054_434960495667_6492149_n.jpg", "description":".."},{"lowsrc":"upload\/68192_434959680667_5886258_n.jpg","fullsrc":"upload\/68192_434959680667_5886258_n.jpg", "description":".."},{"lowsrc":"upload\/68564_434957555667_6861124_n.jpg","fullsrc":"upload\/68564_434957555667_6861124_n.jpg", "description":".."},{"lowsrc":"upload\/69310_434957800667_1701765_n.jpg","fullsrc":"upload\/69310_434957800667_1701765_n.jpg", "description":".."},{"lowsrc":"upload\/69387_434959550667_7983843_n.jpg","fullsrc":"upload\/69387_434959550667_7983843_n.jpg", "description":".."},{"lowsrc":"upload\/2014-03-08 13.10.23.jpg","fullsrc":"upload\/2014-03-08 13.10.23.jpg", "description":".."},{"lowsrc":"upload\/163615_10150154856576982_6953203_n.jpg","fullsrc":"upload\/163615_10150154856576982_6953203_n.jpg", "description":".."},{"lowsrc":"upload\/166359_10150154457346982_935568_n.jpg","fullsrc":"upload\/166359_10150154457346982_935568_n.jpg", "description":".."},{"lowsrc":"upload\/167462_10150154448206982_1477136_n.jpg","fullsrc":"upload\/167462_10150154448206982_1477136_n.jpg", "description":".."},{"lowsrc":"upload\/215615_10150273999931982_2480477_n.jpg","fullsrc":"upload\/215615_10150273999931982_2480477_n.jpg", "description":".."},{"lowsrc":"upload\/224748_10150289555126982_5498222_n.jpg","fullsrc":"upload\/224748_10150289555126982_5498222_n.jpg", "description":".."},{"lowsrc":"upload\/264104_10150360092396982_2995613_n.jpg","fullsrc":"upload\/264104_10150360092396982_2995613_n.jpg", "description":".."},{"lowsrc":"upload\/320630_10150468585731982_2015719207_n.jpg","fullsrc":"upload\/320630_10150468585731982_2015719207_n.jpg", "description":".."},{"lowsrc":"upload\/941894_10151714169495668_1416787960_n.jpg","fullsrc":"upload\/941894_10151714169495668_1416787960_n.jpg", "description":".."},{"lowsrc":"upload\/942103_4715334455777_685816893_n.jpg","fullsrc":"upload\/942103_4715334455777_685816893_n.jpg", "description":".."},{"lowsrc":"upload\/969996_10151825008295668_54488153_n.jpg","fullsrc":"upload\/969996_10151825008295668_54488153_n.jpg", "description":".."},{"lowsrc":"upload\/1003486_10151825006525668_1505219563_n.jpg","fullsrc":"upload\/1003486_10151825006525668_1505219563_n.jpg", "description":".."},{"lowsrc":"upload\/1003839_10151825000420668_1839879489_n.jpg","fullsrc":"upload\/1003839_10151825000420668_1839879489_n.jpg", "description":".."},{"lowsrc":"upload\/1012017_10151824996190668_403208998_n.jpg","fullsrc":"upload\/1012017_10151824996190668_403208998_n.jpg", "description":".."},{"lowsrc":"upload\/1016218_10152013391611982_1255689909_n.jpg","fullsrc":"upload\/1016218_10152013391611982_1255689909_n.jpg", "description":".."},{"lowsrc":"upload\/1069242_10151824998750668_1834919713_n.jpg","fullsrc":"upload\/1069242_10151824998750668_1834919713_n.jpg", "description":".."},{"lowsrc":"upload\/1377142_10152002964026882_1850291819_n.jpg","fullsrc":"upload\/1377142_10152002964026882_1850291819_n.jpg", "description":".."},{"lowsrc":"upload\/1465185_10152034828680668_1993741981_n.jpg","fullsrc":"upload\/1465185_10152034828680668_1993741981_n.jpg", "description":".."}]');
-        $(function() {
-            $('#galleryherepls').galereya({
-                load: function(next) {
-					next(datajson);
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">RC Mimarlık</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a class="page-scroll" href="#page-top">Anasayfa</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#services">Hİzmetler</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#about">Hakkımızda</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Projeler</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#contact">İletİşİm</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"></div>
+                <div class="intro-heading" style="color:transparent">.</div>
+                <a href="#services" class="page-scroll btn btn-xl">Hİzmetler</a>
+            </div>
+        </div>
+    </header>
+   
+   <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Hİzmetler</h2>
+                    <h3 class="section-subheading text-muted">Ramazan Carus Mimarlık birçok alanda hizmet sunmaktadır</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Mimari Tasarım</h4>
+                    <p class="text-muted">Mimari yapı tasarımı ve projelendirilmesi</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-gavel fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">İlave / Tadilat Tasarımları</h4>
+                    <p class="text-muted">Mevcut yapınızda istenen ek ve değişikliklerin projelendirilmesi, uygulamasının denetlenmesi</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Proje Takibi</h4>
+                    <p class="text-muted">Yapının inşaası sırasında uygulama kontrolörlüğü</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+ <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">HakkImızda</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/itu.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>1987</h4>
+                                    <h4 class="subheading">İTÜ Mimarlık Fakültesi</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Ramazan Carus, İTÜ Mimarlık fakültesinden 1987 yılında mezun oldu. Öğrenciliği Süresince Yüksek Mimar Turgut Cansever ve Yüksek Mimar Neşet Arolat'ın yanında stajlarını tamamladı.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/msu.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>1987-1988</h4>
+                                    <h4 class="subheading">Mimar Sinan Üniversitesi</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Mimar Sinan Üniversitesi Şehircilik Bölümü,Şehircilik ve Kentsel tasarım dalında master kazandı. 1 yıl master seviyesinde çalışmalarda bulundu.  </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/rc4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>1987 - 2014</h4>
+                                    <h4 class="subheading">Ramazan Carus Mimarlık</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Ramazan Carus; 2000 yılına kadar serbest mimarlık ve müteahhitlik hizmetleri vermiştir. 2000 yılından günümüze kadar 25 yılı aşkın tecrübesiyle çeşitli mimari projelerde serbest mimarlık çalışmalarına devam etmektedir.</p>
+                                </div>
+                            </div>
+                        </li>     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+	<!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projeler</h2>
+                    <h3 class="section-subheading text-muted">Bazı örnek projeler</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Akdeniz Sitesi</h4>
+                        <p class="text-muted">Mersin / Mezitli</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/tarsus-basar-apt/thumb1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Başar Apartmanı</h4>
+                        <p class="text-muted">Mersin / Tarsus</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/tarsus-basar2-apt/thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Başar 2 Apartmanı </h4>
+                        <p class="text-muted">Mersin / Tarsus</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/tasucu-villa/thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Taşucu Villa</h4>
+                        <p class="text-muted">Mersin / Taşucu</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/mersin-aytekin-sarpkaya-evi/1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Aytekin Sarpkaya Evi</h4>
+                        <p class="text-muted">Mersin / Dorukkent</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/tarsus-cemal-dirik-evi/thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Cemal Dirik Evi</h4>
+                        <p class="text-muted">Mersin / Çamlıyayla</p>
+                    </div>
+                </div>
+				 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/tarsus-ismail-yanik-evi/thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>İsmail Yanık Evi</h4>
+                        <p class="text-muted">Mersin / Çamlıyayla</p>
+                    </div>
+                </div>
+				 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/RCmimar/tarsus-barbaros-eczanesi/thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Barbaros Eczanesi</h4>
+                        <p class="text-muted">Mersin / Tarsus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section 
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="images/rc2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Kay Garland</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Clients Aside -->
+    <aside class="clients" style="display:none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+					<h2 class="section-heading" style="margin-bottom: 50px;">İletİşİm</h2>
+                    <h3 class="section-subheading text-muted" style="color: gold;margin-bottom: 10px;">
+					Şehit Mustafa Mh. 3512 Sk. Sucularlı Apt. Kat:2 No:7 Tarsus / Mersin </h3>
+					<h3 class="section-subheading text-muted " style="color: gold;margin-bottom: 10px;">ramazancarus@hotmail.com</h3>
+					<h3 class="section-subheading text-muted " style="color: gold;">0324 622 45 77  -  0536 608 25 35</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<div id='a'></div>
+						</div>								
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Ramazan Carus Mimarlık 2014</span>
+                </div>
+                <div class="col-md-4" style="display:none">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="display:none">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Akdeniz Sitesi</h2>
+                            <p class="item-intro text-muted">Mersin / Mezitli</p>
+                            <img class="img-responsive" src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/23.jpg" alt="">
+                            <p></p>
+							<img class="img-responsive" src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/plan.jpg" alt="">
+							<img class="img-responsive" src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/5.jpg" alt="">
+							<img class="img-responsive" src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/09a.jpg" alt="">
+                            <img class="img-responsive" src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/RTT.jpg" alt="">
+							<img class="img-responsive" src="images/RCmimar/mersin-mezitli-akdeniz-sitesi/vvvvv.jpg" alt="">
+                            <p></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Başar Apartmanı</h2>
+                            <p class="item-intro text-muted">Mersin / Tarsus</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-basar-apt/1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-basar-apt/2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-basar-apt/3.jpg" alt="">
+                            <p></p>
+                            <p></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Başar 2 Apartmanı</h2>
+                            <p class="item-intro text-muted">Mersin / Tarsus</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-basar2-apt/1.jpg" alt="">
+                            <p></p>
+                            <p></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Taşucu Villa</h2>
+                            <p class="item-intro text-muted">Mersin / Taşucu</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/tasucu-villa/1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tasucu-villa/2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tasucu-villa/3.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tasucu-villa/4.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tasucu-villa/5.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tasucu-villa/6.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Aytekin Sarpkaya Evi</h2>
+                            <p class="item-intro text-muted">Mersin / Dorukkent</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/mersin-aytekin-sarpkaya-evi/son1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/mersin-aytekin-sarpkaya-evi/1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/mersin-aytekin-sarpkaya-evi/2.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Cemal Dirik Evi</h2>
+                            <p class="item-intro text-muted">Mersin / Çamlıyayla</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-cemal-dirik-evi/res3.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	 <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>İsmail Yanık Evi</h2>
+                            <p class="item-intro text-muted">Mersin / Çamlıyayla</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-ismail-yanik-evi/1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-ismail-yanik-evi/2.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	 <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Barbaros Eczanesi</h2>
+                            <p class="item-intro text-muted">Mersin / Tarsus</p>
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-barbaros-eczanesi/2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-barbaros-eczanesi/1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-barbaros-eczanesi/3.jpg" alt="">
+                            <img class="img-responsive img-centered" src="images/RCmimar/tarsus-barbaros-eczanesi/4.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  Projeyİ Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="content"></div>
+
+    
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+	
+	
+<!-- <script>
+        function show()
+        {
+                $.ajax({
+                url: "2.html",
+                cache: false,
+				dataType: "html",
+                success: function(data){
+				//alert(data);
+                    $('#content').html(data);
                 }
             });
+        }
+
+        $(document).ready(function(){
+            show();
+            //alert('f');
         });
-		 $(function () {
-            var $section = $('section');
-            $(window).on("resize", function () {
-                var dif = Math.max($(window).height() - $section.height(), 0);
-                var padding = Math.floor(dif / 2) + 'px';
-                $section.css({ 'padding-top': padding, 'padding-bottom': padding });
-            }).trigger("resize");
-            $('#myCounter').mbComingsoon(new Date(2014, 7, 8, 21, 0));
-            setTimeout(function () {
-                $(window).resize();
-            }, 200);
-        });
-    </script>
-</head>
-<body style="background-color:#DFCFBE">
-<div class="row centered text-center" id="myCounter"></div>
-    <div id="galleryherepls"></div>
+    </script> -->
+	<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+ 
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(36.916604,34.888548),
+            zoom: 18,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: true,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        }
+        var mapElement = document.getElementById('a');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['RC Mimarlık', 'undefined', 'undefined', 'undefined', 'undefined', 36.916669,  34.888548, 'https://mapbuildr.com/assets/img/markers/default.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
+<style>
+    #a {
+        height:400px;
+        width:auto;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+	.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
+
+
 </body>
+
+</html>
